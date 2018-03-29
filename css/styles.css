@@ -1,3 +1,17 @@
+.logo {
+    height: 3em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: beige
+}
+header nav {
+    flex: 1;
+}
+
+
 h1 {
     color:rgba(0, 0, 0, 0.87);
     font-family:fantasy;
@@ -109,7 +123,7 @@ p {
   background-image: url(../images/4d8885f440b275c64305a10db701ec6c.jpg);
   background-size: cover;
   padding: 10vh 0;
-  color: $white;
+  color: $#ffffff;
   display: flex;
   justify-content: flex-end;
 }
@@ -118,7 +132,10 @@ p {
   flex-basis: 100%;
   padding: 0 2em;
   @media (min-width: 40rem) {
-    flex-basis: 50%;
+      flex-basis: 50%; {
+          <p> color: darkorange;</p>
+      }
   }
 }
+
 
