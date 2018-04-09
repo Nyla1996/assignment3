@@ -1,64 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <title>The Sneaker Hook up</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
+.logo {
+    height: 3em;
+}
 
-<body>
-    <header>
-        <a href="https://www.google.com"><img class="logo" src= "images/transparentfootprint.png" alt="logo">
-            </a>
-        <nav>
-            <ul>
-                <li><a href="Index.html"> Home</a></li>
-                <li><a href="lookbook.html"> Lookbook</a></li>
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ff9d00
+}
 
-            </ul>
-        </nav>
-    </header>
-
-    <h1 id="home-title">Sneaker Hook Up </h1>
-
-
-    <h2> Stay up to date with your favorite brands. </h2>
-    <br>
+header nav {
+    display: flex;
+    align-items: center;
+}
 
 
 
-    <div class="hero">
-        <p>" I firmly believe <span>that with the right Footwear</span> one can rule the world"-Bette Midler</p>
-        <h1>The<span>Hookup</span></h1>
-        <p>No one <strong> </strong> can match <strong>your sneaker game! </strong></p>
-    </div>
 
 
-    <div class="Latest-Releases">
-        <h2>Nike Air Max Plus</h2>
-        <p>During the late 90's, Nike's Air Max collection was at its peak. The technology infused in these sneakers defined their kicks as the most advanced shoes on the market. </p>
-    </div>
-    <div class="Latest-Releases">
-        <h2>Adidas Yeezy Desert Rat 500</h2>
-        <p> Yeezy Desert Rat 500s would be available in Adidas stores from March 2018, the upcoming realease would not feature BOOST cushioning, instead packing adiPRENE technology. </p>
-    </div>
-    <div class="Latest-Releases">
-        <h2>Nike Lebron 15 Low Light Bone </h2>
-        <p>The Nike Lebron 15Low looks very similar to the original high/mid as the entire upper is constructed out the Nike's new BattleKnit material. </p>
-    </div>
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    outline: 3px solid white;
+    outline-offset: .25em;
+    display: inline-block;
+    margin: 0.25em 0 0.5em;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: fantasy;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+    color: #f7780b;
+}
 
 
-    <div class="cta">
-        <div class="cta-text">
-            <h2> Exclusive <span> News</span></h2>
-            <p> <b> Stay updated on the latest realeases by sign up for our Newsletter </b> </p>
-            <a href="" class="btn"> Sign up Here</a>
-        </div>
-    </div>
+.btn {
+    display: inline-block;
+    padding: .7em 1.7em;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
 
-    <footer>
-        <a href="contact.html">Contact Us:TheSHU@gmail.com</a>
-    </footer>
-</body>
+}
 
-</html>
+.hero {
+    background-color: #dcdfed;
+    background-image: url("../images/white%20sneaker%20display.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    padding: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-lookbook {
+    background-color: #dcdfed;
+    background-image: url("../images/BOX%20sneakers.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-lookbook h1 {
+    color: aliceblue;
+}
+
+
+
+.cta {
+    background-image: url(../images/addidaswhite.jpg);
+    background-size: cover;
+    padding: 10vh 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+
+.cta-text {
+    color: darkorange;
+}
+
+
+@media (min-width: 40rem) {
+/*    need to add media change*/
+}
+
+
+footer {
+
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
